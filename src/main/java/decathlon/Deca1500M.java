@@ -11,7 +11,7 @@ public class Deca1500M {
 	boolean active = true;
 
 	CalcTrackAndField calc = new CalcTrackAndField();
-	InputResult inputResult = new InputResult();
+	InputLongResult inputLongResult = new InputLongResult();
 
 	// Calculate the score based on time. All running events.
 	public void calculateResult(double runningTime) {
@@ -20,12 +20,12 @@ public class Deca1500M {
 
 			try {
 				// Acceptable values.
-				if (runningTime < 2) {
+				if (runningTime < 164.8) {
 					System.out.println("Value too low");
-					runningTime = inputResult.enterResult();
-				} else if (runningTime > 7) {
+					runningTime = inputLongResult.enterResult();
+				} else if (runningTime > 474.11) {
 					System.out.println("Value too high");
-					runningTime = inputResult.enterResult();
+					runningTime = inputLongResult.enterResult();
 				} else {
 
 					score = calc.calculateTrack(A, B, C, runningTime);
