@@ -68,55 +68,72 @@ public class SelectDiscipline {
 	public void makeSelection() {
 		switch (disciplineSelected) {
 		case 1:
-			deca100M.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon 100m selected.");
+			deca100M.calculateResult(inputResult.enterResult("Decathlon 100m"));
 			break;
 		case 2:
-			deca400M.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon 400m selected.");
+			deca400M.calculateResult(inputResult.enterResult("Decathlon 400m"));
 			break;
 		case 3:
-			deca110MHurdles.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon 110m Hurdles selected.");
+			deca110MHurdles.calculateResult(inputResult.enterResult("Decathlon 110m Hurdles"));
 			break;
 		case 4:
-			deca1500M.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon 1500m selected.");
+			deca1500M.calculateResult(inputResult.enterResult("Decathlon 1500m"));
 			break;
-		case 5:			
-			decaLongJump.calculateResult(inputResult.enterResult());
+		case 5:
+			System.out.println("Decathlon Long Jump selected.");
+			decaLongJump.calculateResult(inputResult.enterResult("Decathlon Long Jump"));
 			break;
 		case 6:
-			highJump.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon High Jump selected.");
+			highJump.calculateResult(inputResult.enterResult("Decathlon High Jump"));
 			break;
 		case 7:
-			poleVault.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon Pole Vault selected.");
+			poleVault.calculateResult(inputResult.enterResult("Decathlon Pole Vault"));
 			break;
 		case 8:
-			discusThrow.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon Discus Throw selected.");
+			discusThrow.calculateResult(inputResult.enterResult("Decathlon Discus Throw"));
 			break;
 		case 9:
-			decaJavelinThrow.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon Javelin Throw selected.");
+			decaJavelinThrow.calculateResult(inputResult.enterResult("Decathlon Javelin Throw"));
 			break;
 		case 10:
-			decaShotPut.calculateResult(inputResult.enterResult());
+			System.out.println("Decathlon Shot Put selected.");
+			decaShotPut.calculateResult(inputResult.enterResult("Decathlon Shot Put"));
 			break;
 		case 11:
-			hep200M.calculateResult(inputResult.enterResult());
+			System.out.println("Heptathlon 200m selected.");
+			hep200M.calculateResult(inputResult.enterResult("Heptathlon 200m"));
 			break;
 		case 12:
-			hep800M.calculateResult(inputResult.enterResult());
+			System.out.println("Heptathlon 800m selected.");
+			hep800M.calculateResult(inputResult.enterResult("Heptathlon 800m"));
 			break;
 		case 13:
-			hep100MHurdles.calculateResult(inputResult.enterResult());
+			System.out.println("Heptathlon 100m Hurdles selected.");
+			hep100MHurdles.calculateResult(inputResult.enterResult("Heptathlon 100m"));
 			break;
 		case 14:
-			hepHighJump.calculateResult(inputResult.enterResult());
+			System.out.println("Heptathlon High Jump selected.");
+			hepHighJump.calculateResult(inputResult.enterResult("Heptathlon High Jump"));
 			break;
 		case 15:
-			hepLongJump.calculateResult(inputResult.enterResult());
+			System.out.println("Heptathlon Long Jump selected.");
+			hepLongJump.calculateResult(inputResult.enterResult("Heptathlon Long Jump"));
 			break;
 		case 16:
-			hepShotPut.calculateResult(inputResult.enterResult());
+			System.out.println("Heptathlon Shot Put selected.");
+			hepShotPut.calculateResult(inputResult.enterResult("Heptathlon Shot Put"));
 			break;
 		case 17:
-			hepJavelinThrow.calculateResult(inputResult.enterResult());
+			System.out.println("Heptathlon Javelin Throw selected.");
+			hepJavelinThrow.calculateResult(inputResult.enterResult("Heptathlon Javelin Throw"));
 			break;
 		default:
 			System.out.println("Invalid input, try again.");

@@ -4,6 +4,7 @@ import common.*;
 
 public class Deca1500M {
 
+	private String classname = "Decathlon 1500m";
 	private int score;
 	private double A = 0.03768;
 	private double B = 480;
@@ -22,10 +23,10 @@ public class Deca1500M {
 				// Acceptable values.
 				if (runningTime < 2) {
 					System.out.println("Value too low");
-					runningTime = inputResult.enterResult();
+					runningTime = inputResult.enterResult(classname);
 				} else if (runningTime > 7) {
 					System.out.println("Value too high");
-					runningTime = inputResult.enterResult();
+					runningTime = inputResult.enterResult(classname);
 				} else {
 
 					score = calc.calculateTrack(A, B, C, runningTime);
