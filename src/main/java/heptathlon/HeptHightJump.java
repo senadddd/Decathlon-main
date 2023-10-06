@@ -35,7 +35,7 @@ public class HeptHightJump {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers");
+				System.out.println("Please enter values in centimeters (cm):");
 			}
 		}
 		System.out.println("The result is: " + score);

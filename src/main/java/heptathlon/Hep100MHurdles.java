@@ -33,7 +33,7 @@ public class Hep100MHurdles {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers");
+				System.out.println("Please enter value in seconds (s):");
 			}
 		}
 		System.out.println("The result is " + score);

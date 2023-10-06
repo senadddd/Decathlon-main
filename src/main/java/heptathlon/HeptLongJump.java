@@ -35,7 +35,7 @@ public class HeptLongJump {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers");
+				System.out.println("Please enter values in meters (m):");
 			}
 		}
 		System.out.println("The result is: " + score);

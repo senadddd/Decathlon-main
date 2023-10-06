@@ -35,7 +35,7 @@ public class HeptJavelinThrow {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers");
+				System.out.println("Please enter value in meters (m):");
 			}
 		}
 		System.out.println("The result is: " + score);
