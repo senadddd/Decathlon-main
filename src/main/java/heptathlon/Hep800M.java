@@ -10,7 +10,7 @@ public class Hep800M {
 	private double C = 1.88;
 	boolean active = true;
 	CalcTrackAndField calc = new CalcTrackAndField();
-	InputResult inputResult = new InputResult();
+	InputLongResult inputLongResult = new InputLongResult();
 
 	// Calculate the score based on time. All running events.
 	public void calculateResult(double runningTime) {
@@ -21,11 +21,11 @@ public class Hep800M {
 				// Acceptable values.
 				if (runningTime < 70) {
 					System.out.println("Value too low");
-					runningTime = inputResult.enterResult();
+					runningTime = inputLongResult.enterResult();
 				} else if (runningTime > 250.79) {
 					// competitor gets 1 point in 250.79 sec
 					System.out.println("Value too high");
-					runningTime = inputResult.enterResult();
+					runningTime = inputLongResult.enterResult();
 				} else {
 					score = calc.calculateTrack(A, B, C, runningTime);
 					active = false;
