@@ -24,6 +24,7 @@ import heptathlon.HeptShotPut;
 public class SelectDiscipline {
 
 	int disciplineSelected;
+	InputLongResult inputLongResult = new InputLongResult();
 	InputResult inputResult = new InputResult();
 	Scanner sc = new Scanner(System.in);
 	Deca100M deca100M = new Deca100M();
@@ -81,7 +82,7 @@ public class SelectDiscipline {
 			break;
 		case 4:
 			System.out.println("Decathlon 1500m selected.");
-			deca1500M.calculateResult(inputResult.enterResult("Decathlon 1500m"));
+			deca1500M.calculateResult(inputLongResult.enterResult("Decathlon 1500m"));
 			break;
 		case 5:
 			System.out.println("Decathlon Long Jump selected.");
@@ -113,7 +114,7 @@ public class SelectDiscipline {
 			break;
 		case 12:
 			System.out.println("Heptathlon 800m selected.");
-			hep800M.calculateResult(inputResult.enterResult("Heptathlon 800m"));
+			hep800M.calculateResult(inputLongResult.enterResult("Heptathlon 800m"));
 			break;
 		case 13:
 			System.out.println("Heptathlon 100m Hurdles selected.");
@@ -148,7 +149,7 @@ public class SelectDiscipline {
 		System.out.println("1. Decathlon 100 meters. (Measured in seconds)");
 		System.out.println("2. Decathlon 400 meters. (Measured in seconds)");
 		System.out.println("3. Decathlon 110 meters hurdles. (Measured in seconds)");
-		System.out.println("4. Decathlon 1500 meters. (Measured in minutes and seconds)");
+		System.out.println("4. Decathlon 1500 meters. (Measured in minutes:seconds)");
 		System.out.println("5. Decathlon Long Jump. (Measured in centimeters)");
 		System.out.println("6. Decathlon High Jump. (Measured in centimeters)");
 		System.out.println("7. Decathlon Pole Vault. (Measured in centimeters)");
@@ -156,7 +157,7 @@ public class SelectDiscipline {
 		System.out.println("9. Decathlon Javelin Throw. (Measured in meters)");
 		System.out.println("10. Decathlon Shot Put. (Measured in meters)");
 		System.out.println("11. Heptathlon 200 meters. (Measured in seconds)");
-		System.out.println("12. Heptathlon 800 meters. (Measured in seconds)");
+		System.out.println("12. Heptathlon 800 meters. (Measured in minutes:seconds)");
 		System.out.println("13. Heptathlon 100 meters hurdles. (Measured in seconds)");
 		System.out.println("14. Heptathlon High Jump. (Measured in centimeters)");
 		System.out.println("15. Heptathlon Long Jump. (Measured in centimeters)");
