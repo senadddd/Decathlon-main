@@ -39,4 +39,7 @@ public class Deca100M {
 
 	}
 
+	public int getScore() {
+		return score;
+	}
 }

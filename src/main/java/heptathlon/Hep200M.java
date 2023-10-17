@@ -37,5 +37,7 @@ public class Hep200M {
 		System.out.println("The result is " + score);
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

@@ -39,5 +39,7 @@ public class DecaHighJump {
 		System.out.println("The result is: " + score);
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }
